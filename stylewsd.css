@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
     margin: 0;
@@ -15,35 +15,32 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    z-index: 0;
+}
+
+.promo {
+    width: 370px;
+    height: auto;
+    margin-top: 470px;
+    padding: 20px;
 }
 
 .container p {
-    padding-top: 20px;
-    font-size: 1.3vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: 4000;
-}
-
-.logo {
-    width: 200px;
-    height: auto;
-    margin-top: 320px;
-}
-
-h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    color: white;
-    font-size: 3em;
+    color: #f0f5f4;
+    font-size: 1.2em;
     margin-bottom: 20px;
+    max-width: 370px;
+    text-align: left;
 }
 
 .buttons button {
     background-color: #2f4d66;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 10px;
     border-radius: 25px;
     cursor: pointer;
@@ -93,9 +90,10 @@ h1 {
     color: #fff;
 }
 
-footer {
+.footer p {
     font-size: 0.7em;
     padding-bottom: 10px;
+    font-family: "Rubik", sans-serif;
 }
 
 @media (max-width: 800px) {
@@ -112,8 +110,8 @@ footer {
 
 @media (max-width: 600px) {
 
-    .logo {
-        width: 160px;
+    .promo {
+        width: 300px;
         height: auto;
         margin-top: 35px;
     }
@@ -139,8 +137,21 @@ footer {
         padding: 5px;
     }
 
-    .footer {
+    .footer p {
         padding-top: 35px;
+        font-size: 0.5em;
+    }
+
+    .snow2 {
+        height: 10%;
+    }
+
+    .snowfall2 {
+        height: 30%; /* Adjust this value as needed */
+    }
+
+    .container p {
+        max-width: 300px;
     }
 }
 
@@ -184,7 +195,7 @@ footer {
   
   .snowfall2 {
     position: absolute;
-    height: 50%;
+    height: 70%;
     width: 100%;
     background: url("https://user-images.githubusercontent.com/7342669/50293046-ab4ed880-0440-11e9-8537-8a0e70729b34.png"),
       url("https://user-images.githubusercontent.com/7342669/50293049-ad189c00-0440-11e9-8cae-a57ad65c22ca.png"),
